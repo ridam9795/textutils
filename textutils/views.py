@@ -12,8 +12,7 @@ def analyze(request):
     fullcaps=request.POST.get('fullcaps','off')
     newlineremover=request.POST.get('newlineremover','off')
     extraspaceremover=request.POST.get('extraspaceremover','off')
-    print(djtext)
-    print(removepunc)
+
     if removepunc=='on':
         punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
         analyzed=""
